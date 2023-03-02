@@ -23,7 +23,7 @@ class MainFragment : Fragment() {
         val rootView = binding.root
         // Inflate the layout for this fragment
         val SnapList = listOf(
-            Snap("aaaa", "10", R.drawable.snapchat_sent)
+            Snap("Christan Horner", "10m", R.drawable.guenther)
         )
 
         val myAdapter = SnapAdapter(SnapList)

@@ -76,6 +76,7 @@
         android:layout_height="50dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toEndOf="@+id/time_sent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/camera" />

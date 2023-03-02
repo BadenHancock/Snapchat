@@ -5,7 +5,6 @@ import android.widget.Toast
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recyclerviewdemo.MainFragmentDirections
-import com.example.snapchat.databinding.FragmentMainBinding
 import com.example.snapchat.databinding.ListItemLayoutBinding
 
 class SnapViewHolder (val binding: ListItemLayoutBinding) :
