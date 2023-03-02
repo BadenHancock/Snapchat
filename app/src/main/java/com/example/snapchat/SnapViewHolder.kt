@@ -1,10 +1,8 @@
 package com.example.snapchat
 
-import Snap
-import android.widget.Toast
+
 import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.recyclerviewdemo.MainFragmentDirections
 import com.example.snapchat.databinding.ListItemLayoutBinding
 
 class SnapViewHolder (val binding: ListItemLayoutBinding) :
@@ -13,9 +11,10 @@ class SnapViewHolder (val binding: ListItemLayoutBinding) :
     lateinit var globalSnap : Snap
     init {
         binding.root.setOnClickListener { view ->
-            setSnapStatus(true)
+            globalSnap.isOpened = true
+            setSnapStatus(globalSnap)
             val action = MainFragmentDirections.actionMainFragmentToImageFragment()
-            binding.root.findNavController().navigate(action)
+            view.findNavController().navigate(action)
         }
     }
 
@@ -24,10 +23,9 @@ class SnapViewHolder (val binding: ListItemLayoutBinding) :
         binding.textViewName.text = globalSnap.username
         binding.timeSent.text = globalSnap.timeSent
         binding.imageViewSnapImage.setImageResource(globalSnap.SnapImageResource)
-        setSnapStatus(false)
+        setSnapStatus(globalSnap)
     }
-    fun setSnapStatus(opened : Boolean) {
-        globalSnap.isOpened = opened
+    fun setSnapStatus(opened : Snap) {
         binding.opened.text = globalSnap.stringOpened
         binding.imageView.setImageResource(globalSnap.ImageResourceOpened)
     }

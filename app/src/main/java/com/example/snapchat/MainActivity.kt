@@ -1,10 +1,7 @@
-package com.example.quiz
+package com.example.snapchat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.PersistableBundle
-import android.util.Log
-import android.widget.Toast
 import com.example.snapchat.databinding.ActivityMainBinding
 
 

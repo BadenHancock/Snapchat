@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.snapchat.databinding.FragmentImageBinding
 
-class imageFragment : Fragment() {
+class ImageFragment : Fragment() {
     private var _binding: FragmentImageBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(

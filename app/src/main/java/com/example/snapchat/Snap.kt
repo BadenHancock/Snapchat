@@ -1,5 +1,4 @@
-import android.media.Image
-import com.example.snapchat.R
+package com.example.snapchat
 
 data class
 Snap(
@@ -12,9 +11,9 @@ Snap(
         if (isOpened)
             "opened"
     else
-        "received"
+        "New Snap"
 
-    val ImageResourceOpened : Int
+    var ImageResourceOpened : Int = 0
         get() =
             if (isOpened)
                 R.drawable.snapchat_opened

@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageViewSnapImage"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,7 +20,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:textSize="24sp"
+        android:textSize="18sp"
         app:layout_constraintLeft_toRightOf="@id/imageViewSnapImage"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Name" />
@@ -31,6 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="#000000"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -41,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
         android:text="Recieved"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toStartOf="@+id/time_sent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -52,16 +54,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0m"
-        app:layout_constraintBottom_toBottomOf="@+id/opened"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/opened"
-        app:layout_constraintTop_toTopOf="@+id/opened" />
+        tools:layout_editor_absoluteX="189dp"
+        tools:layout_editor_absoluteY="39dp" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toStartOf="@+id/opened"
         app:layout_constraintHorizontal_bias="0.17"
@@ -72,13 +71,23 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.87"
         app:layout_constraintStart_toEndOf="@+id/time_sent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/camera" />
+        app:srcCompat="@drawable/camera2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="•"
+        app:layout_constraintBottom_toBottomOf="@+id/opened"
+        app:layout_constraintEnd_toStartOf="@+id/time_sent"
+        app:layout_constraintStart_toEndOf="@+id/opened"
+        app:layout_constraintTop_toTopOf="@+id/opened" />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

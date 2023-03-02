@@ -6,15 +6,16 @@
     app:startDestination="@id/mainFragment">
     <fragment
         android:id="@+id/imageFragment"
-        android:name="com.example.snapchat.imageFragment"
+        android:name="com.example.snapchat.ImageFragment"
         android:label="fragment_image"
         tools:layout="@layout/fragment_image" />
     <fragment
         android:id="@+id/mainFragment"
-        android:name="com.example.recyclerviewdemo.MainFragment"
+        android:name="com.example.snapchat.MainFragment"
         android:label="MainFragment" >
         <action
             android:id="@+id/action_mainFragment_to_imageFragment"
             app:destination="@id/imageFragment" />
     </fragment>
+
 </navigation>
